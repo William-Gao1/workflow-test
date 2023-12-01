@@ -45,7 +45,6 @@ jobs:
 
       - name: Push './build' folder to branch
         run: |
-        run: |
           cd ./build
           git add .
           git commit -m "generated"

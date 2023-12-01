@@ -34,8 +34,8 @@ jobs:
 
       - name: Install and Build
         run: |
-          mkdir build
-          cd build
+          mkdir ~/build
+          cd ~/build
           touch index.html
 
       - name: Checkout to 'build' branch
@@ -43,10 +43,10 @@ jobs:
         with:
           ref: build
 
-      - name: Push './build' folder to branch
+      - name: Push '~/build' folder to branch
         run: |
           ls
-          cd ./build
+          cd ~/build
           git add .
           git commit -m "generated"
           git push

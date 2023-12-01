@@ -44,3 +44,4 @@ jobs:
           TARGET_BRANCH: "build"
         run: |
           pwd
+          ls
